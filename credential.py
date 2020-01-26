@@ -14,7 +14,16 @@ class credential:
 
 
 
-        credential.credential_list.append(self)
+        Credential.credential_list.append(self)
     
 
     def delete_credential(self)
+
+
+
+        Credential.credential_list.remove(self)
+
+
+    @classmethod
+    def find_name_by_name(cls,name):
+        
