@@ -58,3 +58,11 @@ class TestCredentials(unittest.TestCase):
 
 
             def test_credential_exists(self):
+
+
+                self.new_credential.save_credential()
+                test_Credential("Test","user","0797239875","test@user.com")
+                test.credential.save_credential()
+
+                credential_exists = Credential.credential_exist("0797239875")
+                self.assertTrue(credential_exists)
