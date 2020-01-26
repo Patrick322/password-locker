@@ -10,4 +10,11 @@ class credential:
         self.password = password
         self.email = email
 
+    def save_credential(self)
+
+
+
+        credential.credential_list.append(self)
     
+
+    def delete_credential(self)
