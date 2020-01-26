@@ -40,3 +40,10 @@ def user_exist(cls,user_name):
         return False
     @classmethod
     def display_user_name(cls)
+
+        return cls.user_list
+
+@classmethod
+def copy_password(cls,password):
+    user_found = user.find_by_password(password)
+    pyperclip.copy(user_found.password)
