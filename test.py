@@ -54,3 +54,7 @@ class TestCredentials(unittest.TestCase):
                     found_credential = Credential.find_name_by_name("Test")
 
                     self.assertEqual(found_credential.email,test_credential.email)
+
+
+
+            def test_credential_exists(self):
