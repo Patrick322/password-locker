@@ -22,7 +22,7 @@ class TestCredentials(unittest.TestCase):
          self.assertEqual(len(Credential.credential_list),1)
 
 
-        def tearDown(self):
+    def tearDown(self):
 
         cedential.credential_list[]
 
