@@ -1,7 +1,7 @@
 ## Project Name
 Password-locker
 
-##  Author
+## Name of Author
 
 Buong Patrick
 
