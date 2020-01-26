@@ -26,4 +26,22 @@ class credential:
 
     @classmethod
     def find_name_by_name(cls,name):
-        
+        for credential in cls.credential_list:
+            if credential.credential_name == name:
+                return credential
+
+
+    @classmethod
+    def credential_exist(cls,name):
+
+        for credential in cls.credential_list:
+            if credential.password == name:
+                return credential
+
+            return False
+
+
+    @classmethod
+    def display_credential(cls)
+
+        return cls.credential_list
