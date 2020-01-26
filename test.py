@@ -3,9 +3,9 @@ from credential import credential
 
 
 class TestCredentials(unittest.TestCase):
-    def SetUp(self)
+    def SetUp(self):
 
-    self.new_credentials = Credential("Patrick","Buong","37897750","patrickbuong@gmail.com") # create account object
+    self.new_credential = Credential("Patrick","Buong","37897750","patrickbuong@gmail.com") # create account object
 
 
     def test_init(self):
@@ -17,3 +17,16 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credential.email,"patrickbuong@gmail.com")
 
         def test_save_credential(self):
+
+            self.new_credential.save_credential()
+            self.assertEqual(len(Credential.credential_list),1)
+
+
+            def tearDown(self):
+
+                cedential.credential_list[]
+
+
+                def test_save_multiple_credential(self):
+
+                    self.new_
