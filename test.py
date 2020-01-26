@@ -9,3 +9,8 @@ class TestCredentials(unittest.TestCase):
 
 
     def test_init(self):
+
+
+        self.assertEqual(self.new_credential.credential_name,"Patrick")
+        self.assertEqual(self.new_credential.user,"Buong")
+        
