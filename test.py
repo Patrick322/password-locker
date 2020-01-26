@@ -29,4 +29,11 @@ class TestCredentials(unittest.TestCase):
 
                 def test_save_multiple_credential(self):
 
-                    self.new_
+                    self.new_credential.save_credential()
+                    test_credential = Credential("Test","user","0797239875","user@.com")
+                    test_credential.save_credential()
+                    self.assertEqual(len(Credential.credential_list),2)
+                    
+
+                    def test_delete_credential(self):
+                    
