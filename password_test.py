@@ -12,7 +12,7 @@ class TestCredentials(unittest.TestCase):
 
 
         self.assertEqual(self.new_credential.credential_name,"Patrick")
-        self.assertEqual(self.new_credential.user,"Buong")
+        self.assertEqual(self.new_credential.usr,"Buong")
         self.assertEqual(self.new_credential.password,"37897750")
         self.assertEqual(self.new_credential.email,"patrickbuong@gmail.com")
 

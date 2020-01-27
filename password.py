@@ -2,11 +2,11 @@ class credential:
     """
     Class that generates new instances of users
     """
-    credentials_list  = []
+    credential_list  = []
 
-    def __init__(self,credential_name,user_name,password,email):
+    def __init__(self,credential_name,usr_name,password,email):
         self.credential_name = credential_name
-        self.user_name = user_name
+        self.usr_name = usr_name
         self.password = password
         self.email = email
 
