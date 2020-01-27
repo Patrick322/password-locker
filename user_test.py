@@ -47,23 +47,23 @@ class TestUser(unittest.TestCase):
      def test_find_user_by_username(self):
          
 
-         self.new_user.save_user()
-         test_user = User("Facebook","Patrick,"Patoh Patrick","Pachecoh")
-         test_user.save_user()
+        self.new_user.save_user()
+        test_user = User("Facebook","Patrick,"Patoh Patrick","Pachecoh")
+        test_user.save_user()
 
-         found_user = User.find_by_user_name("Patoh Patrick")
+        found_user = User.find_by_user_name("Patoh Patrick")
 
-         self.assertEqual(found_user.user_name,test_user.user_name)
+        self.assertEqual(found_user.user_name,test_user.user_name)
      def test_user_exists(self):
          
 
-         self.new_user.save_user()
-         test_user = User("Facebook","Patrick","Patoh Patrick","pachecoh") 
-         test_user.save_user()
+        self.new_user.save_user()
+        test_user = User("Facebook","Patrick","Patoh Patrick","pachecoh") 
+        test_user.save_user()
 
-         user_exists = User.user_exist("Patoh Patrick")
+        user_exists = User.user_exist("Patoh Patrick")
 
-         self.assertTrue(user_exists)
+        self.assertTrue(user_exists)
      def test_display_all_users(self):
        
 

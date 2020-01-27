@@ -117,9 +117,9 @@ def main():
                         print('\n')
                         print('*' * 20)
                         pwd = input(f"{credential_name} password:")
-                        save_credential(create_credential(credential_name,usr_name,pwd,e_address))
+                        save_credential(create_credential(credential_name,user_name,pwd,e_address))
                         print('\n')
-                        print(f"A New {credential_name} Account with the user name  {usr_name} has been created.")
+                        print(f"A New {credential_name} Account with the user name  {user_name} has been created.")
                         print ('\n')
                     elif short_code == 'dc':
                          if display_credential():
@@ -148,7 +148,7 @@ def main():
                     print(f"Thanks {user_name} for your time.I hope you enjoyed my service.Bye...")
                     break
         else:
-                    print("I really didn't get that. Please use the short codes")
+                    print("Incorrect value. Please use the short codes")
 
 if __name__ == '__main__':
     main()                          

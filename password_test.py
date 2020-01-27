@@ -48,7 +48,7 @@ class TestCredentials(unittest.TestCase):
                     
 
         self.new_credential.test_save_credential()
-        test_credential = Credential("Test","user","0797239875","test@user.com")
+        test_credential =Credential("Test","user","0797239875","test@user.com")
         test_credential.save_credential()
 
         found_credential = Credential.find_name_by_name("Test")
