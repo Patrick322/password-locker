@@ -1,4 +1,4 @@
-class credential:
+class Credential:
     """
     Class that generates new instances of users
     """
@@ -10,14 +10,14 @@ class credential:
         self.password = password
         self.email = email
 
-    def save_credential(self)
+    def save_credential(self):
 
 
 
         Credential.credential_list.append(self)
     
 
-    def delete_credential(self)
+    def delete_credential(self):
 
 
 
@@ -42,6 +42,6 @@ class credential:
 
 
     @classmethod
-    def display_credential(cls)
+    def display_credential(cls):
 
         return cls.credential_list

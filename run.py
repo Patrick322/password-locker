@@ -1,6 +1,6 @@
 #!usr/bin/env python3.6
 from user import User
-from credential import Credential
+from password import Credential
 
 def create_user(account_name,user_name,password,email):
    
@@ -10,11 +10,9 @@ def create_user(account_name,user_name,password,email):
 def save_user(user):
     
     user.save_user()    
-
 def del_user(user):
     
     user.delete_user()    
-
 
 def find_user(name):
     
@@ -77,22 +75,23 @@ def main():
             pwd = input('Password : ')
             print ('\n')
             e_address = input('Email address:')
+
             save_user(create_user(account_name,user_name,pwd,e_address)) 
             print ('\n')
             print(f"A New {account_name} Account with the user name  {u_name} has been created.")
             print(f"You can now login to your {account_name} account using your password.")
             print ('\n')
         elif short_code == 'da':
-             if display_user():
-                 print("Here is your account and your details")
-                 print('\n')
-                 for user in display_user():
-                     print(f"Account name:{user.user_name}  User name: {user.user_name} Password:{user.password}")
-                     print('\n')
-             else:
-                 print('\n')
-                 print("You dont seem to have created an account.Sign up to create a new account.")
-                 print('\n')
+            if display_user_name():
+                print("Here is your account and your details")
+                print('\n')
+                for user in display_user():
+                    print(f"Account name:{user.account_name}  User name: {user.user_name} Password:{user.password}")
+                    print('\n')
+            else:
+                print('\n')
+                print("You dont seem to have created an account.Sign up to create a new account.")
+                print('\n')
         elif short_code == 'ln':
             print("Enter your password to login.")
             search_user = input()

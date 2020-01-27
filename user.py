@@ -1,37 +1,37 @@
-import pyperclip
-class user:
+# import pyperclip
+class User:
 
     user_list = []
 
-    def __init__(self,first_name,last_name,user_name,password):
+    def __init__(self,account_name,user_name,pwd,e_address):
 
 
 
-        self.first_name = first_name
-        self.last_name = last_name
-        self.user_name = user_name
-        self.password = password
+        self.first_name = account_name
+        self.last_name = user_name
+        self.user_name = pwd
+        self.password = e_address
 
     user_list = []
-def delete_user(self):
-
-
-
-        user.user_list.append(self)
     def delete_user(self):
 
 
 
-    user.user_list.append(self)
-@classmethod
-def find_by_user_name(cls,user_name):
+        user.user_list.append(self)
+    def save_user(self):
 
 
-    for user in cls.user_list:
-        if user.user_name == user_name:
-            return user_name
-@classmethod
-def user_exist(cls,user_name):
+
+        User.user_list.append(self)
+    @classmethod
+    def find_by_user_name(cls,user_name):
+
+
+        for user in cls.user_list:
+            if user.user_name == user_name:
+                return user_name
+    @classmethod
+    def user_exist(cls,user_name):
 
         for user in cls.user_list:
             if user.user_name == user_name:
@@ -39,11 +39,11 @@ def user_exist(cls,user_name):
 
         return False
     @classmethod
-    def display_user_name(cls)
+    def display_user(cls):
 
         return cls.user_list
 
-@classmethod
-def copy_password(cls,password):
-    user_found = user.find_by_password(password)
-    pyperclip.copy(user_found.password)
+    # @classmethod
+    # def copy_password(cls,password):
+    # user_found = user.find_by_password(password)
+    # pyperclip.copy(user_found.password)
